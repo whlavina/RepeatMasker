@@ -32,11 +32,11 @@
 
 =head1 NAME
 
-Taxononmy
+Taxonomy
 
 =head1 SYNOPSIS
 
-use Taxononmy;
+use Taxonomy;
 
 Usage: 
 
@@ -44,12 +44,12 @@ Usage:
 my $taxDB = Taxonomy->new( taxonomyDataFile=>"taxonomy.dat",
                            namesDmpFile=>"NCBITaxonomyDB/names.dmp",
                            nodesDmpFile=>"NCBITaxonomyDB/nodes.dmp",
-                           rmDatabaseFile=>"Libraries/ReapeatMasker.lib" );
+                           rmDatabaseFile=>"Libraries/RepeatMasker.lib" );
 
-if ( $taxDB->isA( "Mouse", "Mammalia" ) ) {
-  print "A Mouse is a Mammal!\n";
+if ( $taxDB->isA( "house mouse", "Mammalia" ) ) {
+  print "A house mouse is a Mammal!\n";
 }else {
-  print "Error...a Mouse should be Mammal!\n";
+  print "Error...a house mouse should be Mammal!\n";
 }
 
 # All future executions may use this cached database to quickly
